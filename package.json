@@ -1,0 +1,44 @@
+{
+  "name": "tradeking.js",
+  "description": "TradeKing API Client",
+  "version": "0.0.1",
+  "homepage": "https://github.com/krillr/tradeking.js",
+  "author": {
+    "name": "Aaron Krill",
+    "email": "aaron@krillr.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krillr/tradeking.js"
+  },
+  "bugs": {
+    "url": "https://github.com/krillr/tradeking.js/issues"
+  },
+  "licenses": [
+    {
+      "type": "Apache 2.0",
+      "url": "https://github.com/krillr/tradeking.js/blob/master/LICENSE"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "preinstall": "coffee -o lib/ -c src/*.coffee",
+    "test": "istanbul cover _mocha test/main.coffee -- --compilers coffee:coffee-script/register"
+  },
+  "dependencies": {
+    "q": "latest",
+    "limiter": "latest",
+    "oauth": "latest"
+  },
+  "devDependencies": {
+    "chai": "latest",
+    "chai-as-promised": "latest",
+    "coffee-script": "1.9.x",
+    "istanbul": "*",
+    "mocha": "*"
+  },
+  "main": "lib/tradeking.js",
+  "keywords": []
+}
